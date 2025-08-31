@@ -1,0 +1,41 @@
+/* Styling for a Blog Page */
+
+/* Blog title styling */
+.blog-title {
+  font-size: 42px;
+  width: 1000px;
+  margin-inline: auto;
+  margin-bottom: 20px;
+}
+
+/* Main image in the blog */
+.blog-main-image {
+  height: 600px;
+  aspect-ratio: 5/3;
+  margin-inline: auto;
+  object-fit: cover;
+}
+
+/* Section title within the blog */
+.blog-section-title {
+  font-size: 32px;
+  margin-bottom: 18px;
+}
+
+/* Content styling for the blog */
+.blog-content {
+  font-size: 18px;
+  width: 950px;
+  margin-inline: auto;
+}
+
+/* Paragraph styling within the blog content */
+.blog-content p {
+  text-align: justify;
+  line-height: 1.5;
+}
+
+/* Section styling within the blog content */
+.blog-content section {
+  margin-block: 50px;
+}

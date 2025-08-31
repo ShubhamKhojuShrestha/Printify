@@ -1,0 +1,75 @@
+.container {
+  display: flex;
+  padding-inline: 80px;
+}
+
+.heading {
+  background-color: #fafafa;
+  overflow: hidden;
+  margin: 30px;
+  border-radius: 10px;
+  width: 400px;
+}
+
+.heading h1 {
+  background-color: rgb(206, 9, 9);
+  width: 100%;
+  padding: 25px;
+  color: white;
+}
+
+.details {
+  padding: 30px;
+}
+
+.details h3 {
+  margin-top: 9px;
+  margin-bottom: 9px;
+  font-size: 22px;
+}
+
+.details hr {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.details p {
+  margin-top: 16px;
+}
+
+.login {
+  background-color: #fafafa;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 10px;
+  width: 600px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login label {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.login input,
+.login textarea {
+  padding: 16px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: rgba(240, 245, 255, 255);
+  outline: none;
+  border: 0;
+  font: inherit;
+  margin-top: 5px;
+  border: black solid 1px;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  font-weight: 700;
+  margin-top: 12px;
+}

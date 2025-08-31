@@ -1,0 +1,40 @@
+/* Container for members */
+.members-wrapper {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-block: 32px;
+  padding-inline: 150px;
+}
+
+/* Styling for individual member items */
+.members-wrapper .item {
+  flex: 1;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  overflow: hidden;
+  border-radius: 8px;
+  padding-bottom: 16px;
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.1);
+  transition: 300ms ease;
+}
+
+/* Hover effect for member items */
+.members-wrapper .item:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 18px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for member images within items */
+.members-wrapper .item img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+  border-bottom: 2px solid black;
+  background: linear-gradient(45deg, aquamarine, cornflowerblue);
+}

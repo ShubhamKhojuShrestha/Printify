@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata for character set and viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheet links for blog page -->
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+
+    <!-- Favicon and metadata for SEO -->
+    <link rel="icon" href="../images/icons/printer-white.svg" />
+    <meta
+      name="description"
+      content="This page explains about the positive and negative aspects of technology"
+    />
+    <meta
+      name="authors"
+      content="Sayuj Kuickel, Abhisekh Bhandari, Nowal Jung Baidwar, Subham Khoju Shrestha"
+    />
+    <meta
+      name="keywords"
+      content="printers, ink jet, laser printer, printify printers"
+    />
+    <meta name="contact" content="contact@printify.com" />
+
+    <!-- Page title -->
+    <title>Printify | Blog</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="page-nav">
+      <div class="logo-container">
+        <img src="../images/icons/printer.svg" alt="logo" />
+        <p>Printify</p>
+      </div>
+
+      <!-- Navigation links -->
+      <nav class="nav-links">
+        <a href="../index.html">HOME</a>
+        <a href="./products.html">SHOP</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="./about-us.html">ABOUT US</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./research.html">research</a>
+      </nav>
+
+      <!-- Icons and buttons container -->
+      <nav class="icons-container">
+        <img src="../images/icons/search.svg" alt="logo" />
+        <img src="../images/icons/shoppingCard.svg" alt="logo" />
+        <img src="../images/icons/settings-icon.svg" alt="logo" />
+
+        <a href="./products.html">
+          <button class="btn btn-primary">Shop Now</button>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Page half banner section -->
+    <section class="page-half-banner">
+      <h1>Blog</h1>
+      <p class="navigation">
+        <a href="../index.html">Home</a> / <span class="active">blog</span>
+      </p>
+    </section>
+
+    <!-- Main content section -->
+    <main class="blog-page">
+      <!-- Blog title and main image -->
+      <h1 class="blog-title">
+        How Technology Shapes Our Lives: Exploring the Positive and Negative
+        Effects of Technology
+      </h1>
+      <img
+        class="blog-main-image"
+        src="../images/indexImage/MegatankPrinters.webp"
+        alt="technology image"
+      />
+
+      <!-- Blog content sections -->
+      <div class="blog-content">
+        <section>
+          <h3 class="blog-section-title" id="technology">
+            What is technology actually?
+          </h3>
+          <p>
+            <!-- Content for the definition of technology -->
+            Technology refers to the application of scientific Knowledge for
+            practical purposes or application. The use of technology has become
+            very common in our daily life. We all have been surrounded by many
+            technologies. Technology has been developing year to year. Every
+            year or every second new or upgraded technology are being discovered
+            and manufactured. The main purpose of creation of technologies is to
+            make our daily life easier and make our work efficient. There are
+            various kind of technologies, the main types are Mechanical
+            technology, Medical technology, Communication technology, Electronic
+            technology, Industrial technology and Manufacturing technology. The
+            use of technology has been practiced form ancient period. Compared
+            to ancient period now technology has developed very far. The
+            knowledge and resource were very less compared to modern period.
+          </p>
+        </section>
+        <section>
+          <h3 class="blog-section-title" id="technology-advantage">
+            How it can be used for our benefit
+          </h3>
+          <p>
+            <!-- Content for the positive impact of technology -->
+            The positive impact of Technology are it has expended security,
+            Communication has become easier, technology have helped in medical
+            field and education field. Most of all technology have helped
+            increase human economic output by creating more job opportunity.
+            Technology turns complex task into interesting and simple.
+            Technology has provided us entertainment by creation of television,
+            mobile phone etc.
+            <br />
+            Technology has helped us by increasing productivity and efficiency.
+            It allows us to perform tasks in less time.
+          </p>
+        </section>
+
+        <section>
+          <h3 class="blog-section-title" id="technology-disadvantage">
+            But also beware of its consequences
+          </h3>
+          <p>
+            <!-- Content for the negative impact of technology -->
+            the main negative impact of technology is addiction. People gets
+            very attached technology that without technology they cannot do
+            anything. Another negative impact is privacy, there is no guarantee
+            that people uses technology for good purposes. Technology can effect
+            people privacy too. Technology also causes pollution. The industrial
+            machines waste are straight dumped in rivers an ocean which leads to
+            water pollution not only that it also create air pollution by
+            releasing industrial harmful smoke in air. Over use of technology
+            can effect peoples life, it can cause physical disorder like eye
+            strain ,Sleep problems ,depression and anxiety.
+          </p>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <section class="footer-row">
+        <!-- Logo and navigation links -->
+        <div>
+          <div class="logo-container">
+            <img src="../images/icons/printer.svg" alt="logo" />
+            <p>Printify</p>
+          </div>
+
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about-us.html">About</a></li>
+            <li><a href="./contact.html">contact</a></li>
+            <li><a href="./blog.html">blog</a></li>
+            <li><a href="./research.html">Research</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter form -->
+        <form onsubmit="return false" class="newsletter-section">
+          <label for="newsletter">Join Our newsletter</label>
+          <span
+            id="newsletter-err-text"
+            style="font-size: 14px; font-weight: 700"
+          >
+            Field cannot be empty!
+          </span>
+          <div>
+            <input
+              type="email"
+              name="newsletter"
+              id="newsletter"
+              placeholder="Enter Your Email"
+            />
+            <button class="btn" onclick="checkNewsletter()">Subscribe</button>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <!-- Copyright and links -->
+      <section class="footer-row">
+        <p>&copy; <span id="date"></span> printify inc. All Rights Reserved.</p>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </section>
+      <!-- JavaScript for current year and newsletter validation -->
+      <script>
+        document.getElementById("date").innerHTML = new Date().getFullYear();
+      </script>
+      <script src="../javaScript/newslettervalid.js"></script>
+    </footer>
+  </body>
+</html>

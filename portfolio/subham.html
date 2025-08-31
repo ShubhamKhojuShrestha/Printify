@@ -1,0 +1,138 @@
+<<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+  </head>
+
+  <link rel="stylesheet" href="../css/components.css" />
+
+  <style>
+    .portfolio-border {
+      border-radius: 15px 50px 30px;
+      padding: 20px;
+      width: fit-content;
+      border-radius: 25px;
+      border: 3px solid #bf1920;
+      padding: 20px;
+      margin: 20px;
+      background-color: #ececec;
+    }
+    .icon-size {
+      height: 30px;
+      width: 30px;
+      border-radius: 25px;
+    }
+    .main-img {
+      height: 200px;
+      width: 130px;
+      border-radius: 25px;
+    }
+  </style>
+  <body>
+    <header class="page-nav">
+      <div class="logo-container">
+        <img src="../images/icons/printer.svg" alt="logo" />
+        <p>Printify</p>
+      </div>
+
+      <nav class="nav-links">
+        <a href="../index.html">HOME</a>
+        <a href="../pages/products.html">SHOP</a>
+        <a href="../pages/blog.html">BLOG</a>
+        <a href="../pages/about-us.html">ABOUT US</a>
+        <a href="../pages/contact.html">CONTACT</a>
+        <a href="../pages/research.html">research</a>
+      </nav>
+
+      <nav class="icons-container">
+        <img src="../images/icons/search.svg" alt="logo" />
+        <img src="../images/icons/shoppingCard.svg" alt="logo" />
+        <img src="../images/icons/settings-icon.svg" alt="logo" />
+
+        <a href="../pages/products.html">
+          <button class="btn btn-primary">Shop Now</button>
+        </a>
+      </nav>
+    </header>
+
+    <div class="portfolio-border">
+      <div>
+        <img class="main-img" src="../images/portfolio/khoju.jpeg" />
+      </div>
+      <h1>Shubham Khoju Shrestha</h1>
+      <h4>Contact Number : 9884063025</h4>
+      <h2>My information</h2>
+      <p>
+        Hello! My name is Shubham Khoju Shrestha. I am a beginner
+        web-developer.<br />
+        Currently I am studing and improving my knowledge at Islington College.
+      </p>
+      <h2>Hobbies</h2>
+      <p>Travelling, Playing Basketball, Instrumental music etc...</p>
+      <h2>Qualification</h2>
+      <p>
+        SEE Graduate from Rosebud School.<br />
+        +2 Graduate from Trinity International College.<br />
+        Currently studying Bachelors In Information Technology(BIT) in Islington
+        College.
+      </p>
+      <h2>Contact me on</h2>
+      <div>
+        <a href="https://www.instagram.com/subham_khoju/">
+          <img class="icon-size" src="../images/insta.jpg" />
+        </a>
+      </div>
+    </div>
+
+    <footer style="background-color: white">
+      <section class="footer-row">
+        <div>
+          <div class="logo-container">
+            <img src="../images/icons/printer.svg" alt="logo" />
+            <p>Printify</p>
+          </div>
+
+          <ul>
+            <li><a href="../pages/index.html">Home</a></li>
+            <li><a href="../pages/about-us.html">About</a></li>
+            <li><a href="../pages/contact.html">contact</a></li>
+            <li><a href="../pages/blog.html">blog</a></li>
+            <li><a href="../pages/research.html">Research</a></li>
+          </ul>
+        </div>
+        <form onsubmit="return false" class="newsletter-section">
+          <label for="newsletter">Join Our newsletter</label>
+          <span
+            id="newsletter-err-text"
+            style="font-size: 14px; font-weight: 700"
+          >
+            Field cannot be empty!
+          </span>
+          <div>
+            <input
+              type="email"
+              name="newsletter"
+              id="newsletter"
+              placeholder="Enter Your Email"
+            />
+            <button class="btn" onclick="checkNewsletter()">Subscribe</button>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <section class="footer-row">
+        <p>&copy; <span id="date"></span> printify inc. All Rights Reserved.</p>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </section>
+      <script>
+        document.getElementById("date").innerHTML = new Date().getFullYear();
+      </script>
+      <script src="../javaScript/newslettervalid.js"></script>
+    </footer>
+  </body>
+</html>

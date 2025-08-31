@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheet links for contact page -->
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="../images/icons/printer-white.svg" />
+
+    <!-- JavaScript for form validation  -->
+    <script src="../javaScript/formvalid.js" defer></script>
+
+    <!-- Metadata for SEO -->
+    <meta
+      name="description"
+      content="In this page the visitors of our website can contact us"
+    />
+    <meta
+      name="authors"
+      content="Sayuj Kuickel, Abhisekh Bhandari, Nowal Jung Baidwar, Subham Khoju Shrestha"
+    />
+    <meta
+      name="keywords"
+      content="printers, ink jet, laser printer, printify printers"
+    />
+
+    <!-- Contact email information -->
+    <meta name="contact" content="contact@printify.com" />
+
+    <!-- Inline CSS styles specific to this page -->
+    <style>
+      .contact-row {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .contact-row img {
+        height: 26px;
+      }
+
+      #successComponent {
+        position: absolute;
+        right: 150px;
+        top: 100px;
+        padding: 22px 40px;
+        background-color: #fafafa;
+        border-radius: 12px;
+        box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+        display: none;
+      }
+    </style>
+
+    <!-- Page title -->
+    <title>Printify | Contact</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="page-nav">
+      <div class="logo-container">
+        <img src="../images/icons/printer.svg" alt="logo" />
+        <p>Printify</p>
+      </div>
+
+      <!-- Navigation links -->
+      <nav class="nav-links">
+        <a href="../index.html">HOME</a>
+        <a href="./products.html">SHOP</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="./about-us.html">ABOUT US</a>
+        <a href="#">CONTACT</a>
+        <a href="./research.html">research</a>
+      </nav>
+
+      <!-- Icons and buttons container -->
+      <nav class="icons-container">
+        <img src="../images/icons/search.svg" alt="logo" />
+        <img src="../images/icons/shoppingCard.svg" alt="logo" />
+        <img src="../images/icons/settings-icon.svg" alt="logo" />
+
+        <a href="./products.html">
+          <button class="btn btn-primary">Shop Now</button>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Page half banner section -->
+    <section class="page-half-banner">
+      <h1>Contact</h1>
+      <p class="navigation">
+        <a href="./index.html">Home</a> / <span class="active">Contact</span>
+      </p>
+    </section>
+
+    <!-- Success message component -->
+    <section id="successComponent" onclick="hideSuccessComponent()">
+      <p>
+        Dear <span id="successMsgName" style="font-weight: bolder">test</span>,
+      </p>
+      <p>Your Message was submitted!</p>
+    </section>
+
+    <!-- Main content section -->
+    <main class="container">
+      <!-- Heading and contact details section -->
+      <section class="heading">
+        <h1>Contact Details</h1>
+
+        <!-- Office address details -->
+        <div class="details">
+          <h3>Office Address</h3>
+
+          <p class="contact-row">
+            <img src="../images/icons/location.svg" alt="location icon SVG" />
+            Kamalpokhari, Kathmandu
+          </p>
+
+          <hr />
+
+          <!-- Contact information details -->
+          <h3>Contact Info</h3>
+
+          <p class="contact-row">
+            <img src="../images/icons/phone.svg" alt="phone icon SVG" />
+            9812345678, 9800140215
+          </p>
+
+          <p class="contact-row">
+            <img src="../images/icons/mail.svg" alt="mail icon SVG" />
+            Printify@gmail.com
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact form -->
+      <form class="login" onsubmit="return false">
+        <div class="name">
+          <label for="name">Name:</label>
+          <span class="error-text" style="display: none" id="name-err">
+            The Name field cannot be empty*
+          </span>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your Name*"
+          />
+        </div>
+
+        <div class="email">
+          <label for="name">Email:</label>
+          <span class="error-text" style="display: none" id="email-err">
+            The Email field cannot be empty*
+          </span>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter your Email*"
+          />
+        </div>
+
+        <div class="message">
+          <label for="name">Comment:</label>
+          <span class="error-text" style="display: none" id="message-err">
+            The Message field cannot be empty*
+          </span>
+          <textarea
+            id="message"
+            name="message"
+            rows="4"
+            cols="50"
+            style="resize: none"
+            placeholder="Write your Comment*"
+          ></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <button
+          class="btn btn-primary"
+          style="width: fit-content"
+          onclick="validateForm()"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <section class="footer-row">
+        <!-- Logo and navigation links -->
+        <div>
+          <div class="logo-container">
+            <img src="../images/icons/printer.svg" alt="logo" />
+            <p>Printify</p>
+          </div>
+
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about-us.html">About</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="./blog.html">blog</a></li>
+            <li><a href="./research.html">Research</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter form -->
+        <form onsubmit="return false" class="newsletter-section">
+          <label for="newsletter">Join Our newsletter</label>
+          <span
+            id="newsletter-err-text"
+            style="font-size: 14px; font-weight: 700"
+          >
+            Field cannot be empty!
+          </span>
+          <div>
+            <input
+              type="email"
+              name="newsletter"
+              id="newsletter"
+              placeholder="Enter Your Email"
+            />
+            <button class="btn" onclick="checkNewsletter()">Subscribe</button>
+          </div>
+        </form>
+      </section>
+
+      <hr />
+
+      <!-- Copyright and links -->
+      <section class="footer-row">
+        <p>&copy; <span id="date"></span> printify inc. All Rights Reserved.</p>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </section>
+      <!-- JavaScript for current year and newsletter validation -->
+      <script>
+        document.getElementById("date").innerHTML = new Date().getFullYear();
+      </script>
+      <script src="../javaScript/newslettervalid.js"></script>
+    </footer>
+
+    <!-- JavaScript function to hide success message component -->
+    <script>
+      function hideSuccessComponent() {
+        const component = document.getElementById("successComponent");
+        component.style.display = "none";
+      }
+    </script>
+  </body>
+</html>

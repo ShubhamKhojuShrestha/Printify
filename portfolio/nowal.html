@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" href="../images/icons/printer-white.svg" />
+
+    <link rel="stylesheet" href="../css/nowal.css" />
+
+    <title>Printify | Nowal</title>
+  </head>
+  <body>
+    <header class="page-nav">
+      <div class="logo-container">
+        <img src="../images/icons/printer.svg" alt="logo" />
+        <p>Printify</p>
+      </div>
+
+      <nav class="nav-links">
+        <a href="../pages/index.html">HOME</a>
+        <a href="../pages/products.html">SHOP</a>
+        <a href="../pages/blog.html">BLOG</a>
+        <a href="../pages/about-us.html">ABOUT US</a>
+        <a href="../pages/contact.html">CONTACT</a>
+        <a href="../pages/research.html">research</a>
+      </nav>
+
+      <nav class="icons-container">
+        <img src="../images/icons/search.svg" alt="logo" />
+        <img src="../images/icons/shoppingCard.svg" alt="logo" />
+        <img src="../images/icons/settings-icon.svg" alt="logo" />
+
+        <a href="../pages/products.html">
+          <button class="btn btn-primary">Shop Now</button>
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="whole">
+        <div class="img">
+          <img src="../images/portfolio/nowal.jpg" alt="photo" />
+        </div>
+        <div class="info">
+          <h1>Nowal Jung Baidwar</h1>
+          <h2>A bit about me</h2>
+          <p>
+            Hi! My name is Nowal Jung Baidwar and i am currently studying at
+            Islington College which is located at kamalpokhari,Kathmandu. While
+            here, I am completing my Bachelor Degree in BIT(Bachelor in
+            Information Technology).
+          </p>
+
+          <div class="social">
+            <h2>To contact me</h2>
+            <a href="https://www.instagram.com/nowal_____/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/noowal-undefined-1419852b1/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com/nowal_2062">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="moreinfo">
+        <h1>More About Me</h1>
+        <div class="details">
+          <div class="Skills">
+            <h2 style="padding-bottom: 10px">Skills</h2>
+            <ul style="list-style: disc">
+              <li>UI/Ux design using figma</li>
+              <li>Basic HTML,CSS and JS</li>
+              <li>Python and Java</li>
+            </ul>
+          </div>
+
+          <div class="Hobbies">
+            <h2 style="padding-bottom: 10px">Hobbies</h2>
+            <ul style="list-style: disc">
+              <li>Football</li>
+              <li>Basketball</li>
+              <li>Travelling</li>
+              <li>Coding</li>
+            </ul>
+          </div>
+
+          <div class="Education">
+            <h2 style="padding-bottom: 10px">Education</h2>
+            <ul style="list-style: disc">
+              <li>+2 completed</li>
+            </ul>
+          </div>
+
+          <div class="Experience">
+            <h2 style="padding-bottom: 10px">Contact</h2>
+            <li>9818909021</li>
+            <li>014386260</li>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer style="background-color: white">
+      <section class="footer-row">
+        <div>
+          <div class="logo-container">
+            <img src="../images/icons/printer.svg" alt="logo" />
+            <p>Printify</p>
+          </div>
+
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about-us.html">About</a></li>
+            <li><a href="../pages/contact.html">contact</a></li>
+            <li><a href="../pages/blog.html">blog</a></li>
+            <li><a href="../pages/research.html">Research</a></li>
+          </ul>
+        </div>
+        <form onsubmit="return false" class="newsletter-section">
+          <label for="newsletter">Join Our newsletter</label>
+          <span
+            id="newsletter-err-text"
+            style="font-size: 14px; font-weight: 700"
+          >
+            Field cannot be empty!
+          </span>
+          <div>
+            <input
+              type="email"
+              name="newsletter"
+              id="newsletter"
+              placeholder="Enter Your Email"
+            />
+            <button class="btn" onclick="checkNewsletter()">Subscribe</button>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <section class="footer-row">
+        <p>&copy; <span id="date"></span> printify inc. All Rights Reserved.</p>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </section>
+      <script>
+        document.getElementById("date").innerHTML = new Date().getFullYear();
+      </script>
+      <script src="../javaScript/newslettervalid.js"></script>
+    </footer>
+  </body>
+</html>

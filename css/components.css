@@ -1,0 +1,289 @@
+/* Global Styles */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: "CabinetGrotesk", sans-serif;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* Header styles */
+
+.page-nav {
+  position: sticky;
+  background-color: white;
+  top: 0;
+  z-index: 100;
+  height: 80px;
+  font-weight: 100;
+  font-size: 20px;
+  padding: 10px 32px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container p {
+  font-size: 32px;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  font-weight: 600;
+  font-size: 19.84px;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.3s;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-links a:hover {
+  color: #ff4d4d;
+}
+
+.nav-links a::after {
+  display: block;
+  content: "";
+  border-bottom: #ff4d4d solid 3px;
+  transform: scaleX(0);
+  transition: ease-in-out 200ms transform;
+}
+
+.nav-links a:hover::after {
+  transform: scaleX(1);
+}
+
+.page-nav .icons-container {
+  display: flex;
+  gap: 16px;
+}
+
+/* PRIMARY BUTTON */
+
+.btn {
+  padding: 10px 30px;
+  background: transparent;
+  border-radius: 999px;
+  font-weight: 600;
+  border: 1px solid rgb(220 38 38);
+  color: rgb(220 38 38);
+  font-size: 18px;
+  transition-property: all;
+  transition-duration: 150ms;
+  display: block;
+  width: fit-content;
+}
+
+.btn-primary {
+  background: rgb(220 38 38);
+  color: white;
+}
+
+.btn:hover,
+.btn-primary:hover {
+  color: white;
+  cursor: pointer;
+  background: rgb(158, 31, 31);
+  box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+/* Add to cart button */
+
+.add-to-cart {
+  padding: 8px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 90%;
+  margin-top: 6px;
+  background-color: white;
+  border: 2px solid black;
+  outline: 0;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+.add-to-cart:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+/* page half banner */  
+
+.page-half-banner {
+  padding-inline: 80px;
+  margin-block: 40px;
+}
+
+.page-half-banner h1 {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+}
+
+.page-half-banner .navigation {
+  color: rgb(156 163 175);
+  margin-top: 12px;
+  text-transform: capitalize;
+}
+
+.page-half-banner .active {
+  color: black;
+  text-transform: capitalize;
+}
+
+/* product */
+
+.product-item {
+  width: 288px;
+  height: 420px;
+  padding: 10px 10px;
+  padding-inline: 16px;
+  border-radius: 6px;
+  user-select: none;
+  transition-property: all;
+  transition-duration: 300ms;
+}
+
+.slideProduct {
+  min-width: 250px;
+  min-height: 400px;
+}
+
+.product-item:hover {
+  background-color: #cccece50;
+  scale: 1.03;
+}
+
+.product-item img {
+  width: 100%;
+  background-size: cover;
+  aspect-ratio: 1;
+  margin-bottom: 5px;
+}
+
+.product-item .item-body {
+  padding-block: 8px;
+  border-top-width: 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7;
+}
+
+.product-item .item-body .discount {
+  color: #34d399;
+}
+
+.item-body h3 {
+  display: block;
+  height: 44px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Footer Styles */
+
+footer {
+  box-shadow: 0 -4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding-inline: 80px;
+  padding-block: 40px;
+  margin-top: 120px;
+}
+
+footer .footer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer > * {
+  margin-top: 25px;
+}
+
+footer hr {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer .logo-container {
+  margin-bottom: 20px;
+}
+
+footer ul {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  text-transform: capitalize;
+  color: #404040;
+  font-weight: bold;
+  transition: color 0.4s;
+}
+
+footer ul li:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.newsletter-section span {
+  display: none;
+}
+
+.newsletter-section label {
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+.newsletter-section > div {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.newsletter-section > div input {
+  border: 1px solid #002;
+  width: 250px;
+  padding: 10px;
+  margin-block: 4px;
+  outline: 0;
+  border-radius: 2px;
+}

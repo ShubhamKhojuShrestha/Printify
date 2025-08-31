@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Stylesheet links for about us page -->
+    <link rel="stylesheet" href="../css/components.css" />
+    <link rel="stylesheet" href="../css/about.css" />
+
+    <!-- Favicon and metadata for SEO -->
+    <link rel="icon" href="../images/icons/printer-white.svg" />
+    <meta
+      name="description"
+      content="This is the about us page of our printify website"
+    />
+    <meta
+      name="authors"
+      content="Sayuj Kuickel, Abhisekh Bhandari, Nowal Jung Baidwar, Subham Khoju Shrestha"
+    />
+    <meta
+      name="keywords"
+      content="printers, ink jet, laser printer, printify printers"
+    />
+    <meta name="contact" content="contact@printify.com" />
+
+    <!-- Page title -->
+    <title>Printify | About</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header class="page-nav">
+      <div class="logo-container">
+        <img src="../images/icons/printer.svg" alt="logo" />
+        <p>Printify</p>
+      </div>
+
+      <!-- Navigation links -->
+      <nav class="nav-links">
+        <a href="../index.html">HOME</a>
+        <a href="./products.html">SHOP</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="#">ABOUT US</a>
+        <a href="./contact.html">CONTACT</a>
+        <a href="./research.html">research</a>
+      </nav>
+
+      <!-- Icons and buttons container -->
+      <nav class="icons-container">
+        <img src="../images/icons/search.svg" alt="logo" />
+        <img src="../images/icons/shoppingCard.svg" alt="logo" />
+        <img src="../images/icons/settings-icon.svg" alt="logo" />
+
+        <a href="./products.html">
+          <button class="btn btn-primary">Shop Now</button>
+        </a>
+      </nav>
+    </header>
+
+    <!-- Page half banner section -->
+    <section class="page-half-banner">
+      <h1>About Us</h1>
+      <p class="navigation">
+        <a href="../index.html">Home</a> / <span class="active">about us</span>
+      </p>
+    </section>
+
+    <!-- Main content section -->
+    <main style="padding-inline: 80px">
+      <h1 style="text-align: center">Meet Our Team</h1>
+
+      <!-- Team members section -->
+      <section class="members-wrapper">
+        <div class="item">
+          <img src="../images/portfolio/sayuj.png" alt="image of Sayuj" />
+          <h3>Sayuj Kuickel</h3>
+          <a class="btn" href="../portfolio/sayuj.html">Learn more</a>
+        </div>
+        <div class="item">
+          <img src="../images/abhisekh/avatar-1.png" alt="image of " />
+          <h3>Abhisekh Bhandari</h3>
+          <a href="../portfolio/abhisekh.html" class="btn">Learn more</a>
+        </div>
+        <div class="item">
+          <img src="../images/portfolio/nowal.jpg" alt="image of " />
+          <h3>Nowal Jung Baidwar</h3>
+          <a href="../portfolio/nowal.html" class="btn">Learn more</a>
+        </div>
+        <div class="item">
+          <img src="../images/portfolio/khoju.jpeg" alt="image of " />
+          <h3>Subham Khoju Shrestha</h3>
+          <a href="../portfolio/subham.html" class="btn">Learn more</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+      <section class="footer-row">
+        <!-- Logo and navigation links -->
+        <div>
+          <div class="logo-container">
+            <img src="../images/icons/printer.svg" alt="logo" />
+            <p>Printify</p>
+          </div>
+
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./about-us.html">About</a></li>
+            <li><a href="./contact.html">contact</a></li>
+            <li><a href="./blog.html">blog</a></li>
+            <li><a href="./research.html">Research</a></li>
+          </ul>
+        </div>
+        <!-- Newsletter form -->
+        <form onsubmit="return false" class="newsletter-section">
+          <label for="newsletter">Join Our newsletter</label>
+          <span
+            id="newsletter-err-text"
+            style="font-size: 14px; font-weight: 700"
+          >
+            Field cannot be empty!
+          </span>
+          <div>
+            <input
+              type="email"
+              name="newsletter"
+              id="newsletter"
+              placeholder="Enter Your Email"
+            />
+            <button class="btn" onclick="checkNewsletter()">Subscribe</button>
+          </div>
+        </form>
+      </section>
+      <hr />
+      <!-- Copyright and links -->
+      <section class="footer-row">
+        <p>&copy; <span id="date"></span> printify inc. All Rights Reserved.</p>
+        <ul>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy</a></li>
+        </ul>
+      </section>
+      <!-- JavaScript for current year and newsletter validation -->
+      <script>
+        document.getElementById("date").innerHTML = new Date().getFullYear();
+      </script>
+      <script src="../javaScript/newslettervalid.js"></script>
+    </footer>
+  </body>
+</html>
